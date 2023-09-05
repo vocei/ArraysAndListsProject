@@ -55,6 +55,7 @@ namespace ArraysAndLists
             Console.WriteLine($"{oddItem} is odd, but not weird");
             foreach (var item in evens)
             Console.WriteLine($"{item} are even, but not steven");
+            Console.WriteLine("Bye!");
 
         }
     }

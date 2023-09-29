@@ -31,18 +31,24 @@ namespace ArraysAndLists
             //* or the odds List
             //*/
 
+
+
             foreach (var num in numbers)
             {
                 if (num % 2 == 0)
                 {
                     evens.Add(num);
-                    Console.WriteLine($"{num} is an even number");
+                    Console.WriteLine($"{num} is even");
+
                 }
                 else
+                {
                     odds.Add(num);
-                    Console.WriteLine($"{num} is an odd number");
+                    Console.WriteLine($"{num} is odd");
+                }
 
             }
+            Console.WriteLine("\n");
             //DONE
             /* Now using foreach or for loops,
              * display each List of even and odd numbers
@@ -50,12 +56,16 @@ namespace ArraysAndLists
              * Try to be creative in your display
              */
 
-            Console.WriteLine("\nNow lets group them in order");
-            foreach (var oddItem in odds)
-            Console.WriteLine($"{oddItem} is odd, but not weird");
             foreach (var item in evens)
-            Console.WriteLine($"{item} are even, but not steven");
-            Console.WriteLine("Bye!");
+            {
+                Console.WriteLine($"{item} is even");
+
+            }
+
+            foreach (var oddItem in odds)
+            {
+                Console.WriteLine($"{oddItem} is odd");
+            }
 
         }
     }
